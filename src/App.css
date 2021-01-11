@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/* color 1 #74c7b8 */
+/* color 2 #ef4f4f */
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mr-40 {
+  margin-right: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mr-10 {
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+
+.flex-end {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navbar {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #74c7b8;
+  padding: 15px 0;
+  margin-bottom: 50px;
+}
+
+.title-navbar {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container-main {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.form {
+  min-width: 30vw;
+}
+
+.input {
+  margin-bottom: 20px;
+  padding: 10px 5px;
+}
+
+.sub-title {
+  color: #74c7b8;
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  padding: 10px;
+  background-color: #74c7b8;
+  border: none;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.button-disable {
+  padding: 10px;
+  background-color: #74c7b89d;
+  border: none;
+  color: white;
+  font-weight: 900;
+  cursor: not-allowed;
+}
+
+.container-todos {
+  width: 60vw;
+  margin-bottom: 50px;
+}
+
+.card-box {
+  padding: 20px;
+  background-color: #ee9595;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  border: 1px solid #888;
+  max-width: 416px;
+  min-width: auto;
+  border-radius: 5px;
+  padding: 40px;
 }
