@@ -58,6 +58,9 @@ export const Dashboard = ({ loadTodos, todos }) => {
                       )
                   )}
                 </div>
+                <div>
+                  <h1>Penambahan Fitur</h1>
+                </div>
               </div>
             </div>
           </main>
